@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Language-Pal: Your companion for learning new languages.">
+    <meta name="keywords" content="language, learning, AI, Language-Pal">
+    <title>Language-Pal</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #embed-container {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .footer {
+            padding: 10px;
+            width: 100%;
+            background-color: #0044cc;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>Language-Pal</header>
+    <div id="embed-container"></div>
+    <div class="footer">Powered By: NahaInc AI</div>
+    <script>
+        !function(window){const host="https://labs.heygen.com",url=host+"/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJXYXluZV8yMDI0MDcxMSIsInByZXZpZXdJ%0D%0AbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzL2EzZmRiMGM2NTIwMjRmNzk5%0D%0AODRhYWVjMTFlYmYyNjk0XzM0MzUwL3ByZXZpZXdfdGFyZ2V0LndlYnAiLCJuZWVkUmVtb3ZlQmFj%0D%0Aa2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjdjYjBmNjhlOTJiMzRhMGM5NGFlZGIx%0D%0AYWRiM2UwNmJmIiwidXNlcm5hbWUiOiJjOTM3ZjAwOGFhNzI0YzgwOTdhODY0YzM0NTMzZmU4ZCJ9&inIFrame=1",clientWidth=document.body.clientWidth,wrapDiv=document.createElement("div");wrapDiv.id="heygen-streaming-embed";wrapDiv.style.width="100%";wrapDiv.style.height="100%";wrapDiv.style.position="absolute";wrapDiv.style.top="0";wrapDiv.style.left="0";wrapDiv.style.zIndex="9999";const container=document.createElement("div");container.id="heygen-streaming-container";container.style.width="100%";container.style.height="100%";const iframe=document.createElement("iframe");iframe.allowFullscreen=!0;iframe.title="Streaming Embed";iframe.role="dialog";iframe.allow="microphone";iframe.src=url;iframe.style.width="100%";iframe.style.height="100%";iframe.style.border="0";let visible=!1,initial=!1;window.addEventListener("message",(e=>{e.origin===host&&e.data&&e.data.type&&"streaming-embed"===e.data.type&&("init"===e.data.action?(initial=!0,wrapDiv.classList.toggle("show",initial)):"show"===e.data.action?(visible=!0,wrapDiv.classList.toggle("expand",visible)):"hide"===e.data.action&&(visible=!1,wrapDiv.classList.toggle("expand",visible)))})),container.appendChild(iframe),wrapDiv.appendChild(container),document.getElementById("embed-container").appendChild(wrapDiv)}(globalThis);
+    </script>
+</body>
+</html>
